@@ -1,0 +1,166 @@
+/* ============================================================
+   GLOBAL SUPERSTORE BI — assets/dashboard_styles.css
+   This file is auto-loaded by Dash from the assets/ folder.
+   It acts as a second enforcement layer on top of index_string.
+   ============================================================ */
+
+html, body {
+    background: #080b12 !important;
+    color: #e8edf5 !important;
+    font-family: Syne, Arial, sans-serif !important;
+    min-height: 100vh;
+}
+
+/* ── DROPDOWN CONTROL BOX ─────────────────────────────────── */
+.dash-dropdown .Select-control,
+.Select .Select-control {
+    background-color: #1a2236 !important;
+    border: 1px solid rgba(255,255,255,0.10) !important;
+    border-radius: 10px !important;
+    min-height: 42px !important;
+    box-shadow: none !important;
+}
+.dash-dropdown .Select.is-open .Select-control {
+    background-color: #1a2236 !important;
+    border-color: rgba(0,210,255,0.45) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* ── PLACEHOLDER & VALUE ──────────────────────────────────── */
+.dash-dropdown .Select-placeholder,
+.Select .Select-placeholder {
+    color: #7a8ba8 !important;
+    font-family: Syne, Arial, sans-serif !important;
+    font-size: 0.84rem !important;
+    padding-left: 12px !important;
+}
+.dash-dropdown .Select-value-label,
+.Select .Select-value-label {
+    color: #e8edf5 !important;
+    font-family: Syne, Arial, sans-serif !important;
+    font-size: 0.84rem !important;
+}
+
+/* ── SEARCH INPUT (the white box) ────────────────────────── */
+.dash-dropdown .Select-input,
+.dash-dropdown .Select-input > input,
+.dash-dropdown input,
+.Select-input,
+.Select-input > input {
+    background-color: #1a2236 !important;
+    background: #1a2236 !important;
+    color: #e8edf5 !important;
+    font-family: Syne, Arial, sans-serif !important;
+    font-size: 0.84rem !important;
+    caret-color: #00d2ff !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-text-fill-color: #e8edf5 !important;
+}
+
+/* ── DROPDOWN LIST ────────────────────────────────────────── */
+.dash-dropdown .Select-menu-outer,
+.Select-menu-outer {
+    background-color: #131c2e !important;
+    background: #131c2e !important;
+    border: 1px solid rgba(0,210,255,0.22) !important;
+    border-top: 1px solid rgba(255,255,255,0.04) !important;
+    border-radius: 0 0 10px 10px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8) !important;
+    z-index: 99999 !important;
+}
+.dash-dropdown .Select-menu,
+.Select-menu {
+    background-color: #131c2e !important;
+    background: #131c2e !important;
+}
+
+/* ── OPTIONS ──────────────────────────────────────────────── */
+.dash-dropdown .Select-option,
+.Select-option {
+    background-color: #131c2e !important;
+    background: #131c2e !important;
+    color: #c2cede !important;
+    font-family: Syne, Arial, sans-serif !important;
+    font-size: 0.84rem !important;
+    padding: 10px 16px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+}
+.dash-dropdown .Select-option:hover,
+.dash-dropdown .Select-option.is-focused,
+.Select-option:hover,
+.Select-option.is-focused {
+    background-color: rgba(0,210,255,0.10) !important;
+    background: rgba(0,210,255,0.10) !important;
+    color: #00d2ff !important;
+}
+.dash-dropdown .Select-option.is-selected,
+.Select-option.is-selected {
+    background-color: rgba(124,90,243,0.20) !important;
+    background: rgba(124,90,243,0.20) !important;
+    color: #c4b5fd !important;
+}
+
+/* ── ARROW ────────────────────────────────────────────────── */
+.Select-arrow { border-top-color: #4a5f80 !important; }
+.is-open .Select-arrow {
+    border-top-color: transparent !important;
+    border-bottom-color: #00d2ff !important;
+}
+
+/* ── CLEAR BUTTON ─────────────────────────────────────────── */
+.Select-clear-zone { color: #3d4f6a !important; }
+.Select-clear-zone:hover { color: #ff4f7b !important; }
+
+/* ── NO RESULTS ───────────────────────────────────────────── */
+.Select-noresults {
+    background: #131c2e !important;
+    color: #3d4f6a !important;
+    font-family: Syne, Arial, sans-serif !important;
+}
+
+/* ── SCROLLBAR ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #1a2236; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #00d2ff; }
+
+/* ── PLOTLY TRANSPARENT ───────────────────────────────────── */
+.js-plotly-plot .plotly .main-svg { background: transparent !important; }
+.js-plotly-plot .bg { fill: transparent !important; }
+
+/* ── DOWNLOAD BUTTON ──────────────────────────────────────── */
+#download-btn:hover {
+    background: linear-gradient(135deg, #00d2ff, #7c5af3) !important;
+    color: #080b12 !important;
+    box-shadow: 0 0 28px rgba(0,210,255,0.25) !important;
+    border-color: transparent !important;
+}
+
+/* ───────── SIDEBAR ───────── */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background: #0f1829;
+    padding: 20px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+}
+
+/* ───────── MAIN CONTENT ───────── */
+.main-content {
+    margin-left: 280px;
+    padding: 20px;
+}
+
+/* KPI row */
+.kpi-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
